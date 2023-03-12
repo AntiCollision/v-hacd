@@ -75,6 +75,9 @@
     <ClInclude Include="NodeBundle.h">
       <Filter>헤더 파일\VHACD</Filter>
     </ClInclude>
+    <ClInclude Include="Googol.h">
+      <Filter>헤더 파일\VHACD</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TestVHACD.cpp">
