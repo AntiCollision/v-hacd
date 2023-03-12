@@ -141,6 +141,36 @@
     <ClInclude Include="QuickHull.h">
       <Filter>헤더 파일\VHACD\under</Filter>
     </ClInclude>
+    <ClInclude Include="Stages.h">
+      <Filter>헤더 파일\VHACD\enum</Filter>
+    </ClInclude>
+    <ClInclude Include="SplitAxis.h">
+      <Filter>헤더 파일\VHACD\enum</Filter>
+    </ClInclude>
+    <ClInclude Include="VHACDCallbakcs.h">
+      <Filter>헤더 파일\VHACD\under</Filter>
+    </ClInclude>
+    <ClInclude Include="VoxelHull.h">
+      <Filter>헤더 파일\VHACD\under\Voxel</Filter>
+    </ClInclude>
+    <ClInclude Include="CostTask.h">
+      <Filter>헤더 파일\VHACD\under</Filter>
+    </ClInclude>
+    <ClInclude Include="HullPair.h">
+      <Filter>헤더 파일\VHACD\under</Filter>
+    </ClInclude>
+    <ClInclude Include="VHACDImpl.h">
+      <Filter>헤더 파일\VHACD\under</Filter>
+    </ClInclude>
+    <ClInclude Include="LogMessage.h">
+      <Filter>헤더 파일\VHACD\under</Filter>
+    </ClInclude>
+    <ClInclude Include="VHACDAsyncImpl.h">
+      <Filter>헤더 파일\VHACD\under</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool.h">
+      <Filter>헤더 파일\VHACD\under</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TestVHACD.cpp">
@@ -188,6 +218,15 @@
       <Filter>헤더 파일\VHACD\Impl</Filter>
     </None>
     <None Include="Volume.inl">
+      <Filter>헤더 파일\VHACD\Impl</Filter>
+    </None>
+    <None Include="VoxelHull.inl">
+      <Filter>헤더 파일\VHACD\Impl</Filter>
+    </None>
+    <None Include="VHACDImpl.inl">
+      <Filter>헤더 파일\VHACD\Impl</Filter>
+    </None>
+    <None Include="VHACDAsyncImpl.inl">
       <Filter>헤더 파일\VHACD\Impl</Filter>
     </None>
   </ItemGroup>
