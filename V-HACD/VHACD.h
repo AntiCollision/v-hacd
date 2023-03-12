@@ -492,6 +492,7 @@ Googol Determinant3x3(const std::array<VHACD::Vector3<Googol>, 3>& matrix)
     det += (a00xa11 - a01xa10) * matrix[2].GetZ();
     return det;
 }
+
 #include "ConvexHullFace.h"
 #include "ConvexHullVertex.h"
 #include "ConvexHullAABBTreeNode.h"
