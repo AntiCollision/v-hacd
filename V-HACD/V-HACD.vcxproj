@@ -129,20 +129,14 @@
   <ItemGroup>
     <ClInclude Include="FloatMath.h" />
     <ClInclude Include="InParser.h" />
-    <ClInclude Include="SaveUSDA.h" />
     <ClInclude Include="ScopedTime.h" />
     <ClInclude Include="VHACD.h" />
     <ClInclude Include="wavefront.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FloatMath.cpp" />
     <ClCompile Include="InParser.cpp" />
-    <ClCompile Include="SaveUSDA.cpp" />
     <ClCompile Include="TestVHACD.cpp" />
     <ClCompile Include="wavefront.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FloatMath.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

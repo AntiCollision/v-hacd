@@ -47,26 +47,26 @@ public:
 	WavefrontObj(void);
 	~WavefrontObj(void);
 
-	uint32_t loadObj(const uint8_t *data,uint32_t dlen);
+	uint32_t loadObj(const uint8_t* data, uint32_t dlen);
 
-	uint32_t loadObj(const char *fname); // load a wavefront obj returns number of triangles that were loaded.  Data is persists until the class is destructed.
+	uint32_t loadObj(const char* fname); // load a wavefront obj returns number of triangles that were loaded.  Data is persists until the class is destructed.
 
 	// save the mesh as C++ code; just vertices and indices; really simple
-	void saveCPP(const char *fname);
+	void saveCPP(const char* fname);
 
 	void releaseMesh(void);
 
 
-	void deepCopyScale(WavefrontObj &dest, float scaleFactor,bool centerMesh,uint32_t tessellateInputMesh);
+	void deepCopyScale(WavefrontObj& dest, float scaleFactor, bool centerMesh, uint32_t tessellateInputMesh);
 
-	bool saveObj(const char *fname);
+	bool saveObj(const char* fname);
 
-	static bool saveObj(const char *fname,uint32_t vcount,const float *vertices,uint32_t tcount,const uint32_t *indices);
+	static bool saveObj(const char* fname, uint32_t vcount, const float* vertices, uint32_t tcount, const uint32_t* indices);
 
 	uint32_t	mVertexCount;
 	uint32_t	mTriCount;
-	uint32_t	*mIndices;
-	float		*mVertices;
+	uint32_t*   mIndices;
+	float*		mVertices;
 };
 
 #endif

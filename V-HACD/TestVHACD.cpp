@@ -1,6 +1,8 @@
 #include <stdio.h>
-
 #define TEST_FOR_MEMORY_LEAKS 0 // set to 1, on Windows only, to enable memory leak checking on application exit
+#define ENABLE_VHACD_IMPLEMENTATION 1
+#define VHACD_DISABLE_THREADING 0
+
 #if TEST_FOR_MEMORY_LEAKS
 #define _CRTDBG_MAP_ALLOC
 #include <stdlib.h>
@@ -12,12 +14,9 @@
 #include <string.h>
 #include <stdint.h>
 
-#define ENABLE_VHACD_IMPLEMENTATION 1
-#define VHACD_DISABLE_THREADING 0
 #include "VHACD.h"
 #include "wavefront.h"
 #include "FloatMath.h"
-#include "SaveUSDA.h"
 #include "ScopedTime.h"
 
 #include <thread>
@@ -447,33 +446,7 @@ int main(int argc,const char **argv)
 
 				if ( dot && format != ExportFormat::NONE)
 				{
-                    if ( format == ExportFormat::USDA )
-                    {
-                        printf("Saving 'decomp.usda'\n");
-                        SaveUSDA *s = SaveUSDA::create("decomp.usda");
-
-
-                        for (uint32_t i = 0; i < iface->GetNConvexHulls(); i++)
-                        {
-                            VHACD::IVHACD::ConvexHull ch;
-                            iface->GetConvexHull(i, ch);
-                            char outputName[2048];
-                            snprintf(outputName, sizeof(outputName), "Hull%03d", i);
-                            SimpleMesh sm;
-                            sm.mIndices = (const uint32_t *)&ch.m_triangles[0];
-                            sm.mVertices = (const double *)&ch.m_points[0];
-                            sm.mTriangleCount = uint32_t(ch.m_triangles.size());
-                            sm.mVertexCount = uint32_t(ch.m_points.size());
-                            float meshColor[3] = { 1,1,1};
-                            uint32_t colorIdx = i%10;
-                            meshColor[0] = (float)colorCycle[colorIdx][0] / 255;
-                            meshColor[1] = (float)colorCycle[colorIdx][1] / 255;
-                            meshColor[2] = (float)colorCycle[colorIdx][2] / 255;
-                            s->saveMesh(outputName,sm,meshColor);
-                        }
-                        s->release();
-                    }
-					else if ( format == ExportFormat::STL )
+					if ( format == ExportFormat::STL )
 					{
 						for (uint32_t i=0; i<iface->GetNConvexHulls(); i++)
 						{

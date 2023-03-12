@@ -13,47 +13,51 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\Reader/Writer">
+      <UniqueIdentifier>{ab9aa94a-67a8-4f29-beec-872ab37e865f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Reader/Writer">
+      <UniqueIdentifier>{bc1a4f29-e873-4965-a747-ac1749bb3561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Physics">
+      <UniqueIdentifier>{0bc17bc1-bcec-4e76-bf5f-e598cc646870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Timer">
+      <UniqueIdentifier>{a899918d-da49-4bad-a5c9-c5944fb30919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\VHACD">
+      <UniqueIdentifier>{71b699e3-dfaa-4873-b10e-165d790b9448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\VHACD">
+      <UniqueIdentifier>{dac0d2ee-d735-43e2-9dc6-4a8fc2ae83c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="InParser.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="SaveUSDA.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="ScopedTime.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="wavefront.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Reader/Writer</Filter>
+    </ClInclude>
+    <ClInclude Include="InParser.h">
+      <Filter>헤더 파일\Reader/Writer</Filter>
     </ClInclude>
     <ClInclude Include="FloatMath.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="ScopedTime.h">
+      <Filter>헤더 파일\Timer</Filter>
     </ClInclude>
     <ClInclude Include="VHACD.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\VHACD</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FloatMath.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="InParser.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="SaveUSDA.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="TestVHACD.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="wavefront.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Reader/Writer</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FloatMath.inl">
-      <Filter>소스 파일</Filter>
-    </None>
+    <ClCompile Include="InParser.cpp">
+      <Filter>소스 파일\Reader/Writer</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,7 +1,5 @@
 #ifndef FLOAT_MATH_LIB_H
-
 #define FLOAT_MATH_LIB_H
-
 
 #include <float.h>
 #include <stdint.h>

@@ -12,7 +12,7 @@ namespace IN_PARSER
 	/*******************************************************************/
 	/******************** InParser.cpp  ********************************/
 	/*******************************************************************/
-	void InPlaceParser::SetFile(const char *fname)
+	void InPlaceParser::SetFile(const char* fname)
 	{
 		if (mMyAlloc)
 		{
@@ -22,7 +22,7 @@ namespace IN_PARSER
 		mLen = 0;
 		mMyAlloc = false;
 
-		FILE *fph = fopen(fname, "rb");
+		FILE* fph = fopen(fname, "rb");
 		if (fph)
 		{
 			fseek(fph, 0L, SEEK_END);
@@ -30,7 +30,7 @@ namespace IN_PARSER
 			fseek(fph, 0L, SEEK_SET);
 			if (mLen)
 			{
-				mData = (char *)malloc(sizeof(char)*(mLen + 1));
+				mData = (char*)malloc(sizeof(char) * (mLen + 1));
 				size_t ok = fread(mData, mLen, 1, fph);
 				if (!ok)
 				{
@@ -63,11 +63,11 @@ namespace IN_PARSER
 		return mHard[c] == ST_HARD;
 	}
 
-	char * InPlaceParser::AddHard(uint32_t &argc, const char **argv, char *foo)
+	char* InPlaceParser::AddHard(uint32_t& argc, const char** argv, char* foo)
 	{
 		while (IsHard(*foo))
 		{
-			const char *hard = &mHardString[*foo * 2];
+			const char* hard = &mHardString[*foo * 2];
 			if (argc < MAXARGS)
 			{
 				argv[argc++] = hard;
@@ -82,7 +82,7 @@ namespace IN_PARSER
 		return mHard[c] == ST_SOFT;
 	}
 
-	char * InPlaceParser::SkipSpaces(char *foo)
+	char* InPlaceParser::SkipSpaces(char* foo)
 	{
 		while (!EOS(*foo) && IsWhiteSpace(*foo)) foo++;
 		return foo;
@@ -95,14 +95,14 @@ namespace IN_PARSER
 	}
 
 
-	uint32_t InPlaceParser::ProcessLine(uint32_t lineno, char *line, InPlaceParserInterface *callback)
+	uint32_t InPlaceParser::ProcessLine(uint32_t lineno, char* line, InPlaceParserInterface* callback)
 	{
 		uint32_t ret = 0;
 
-		const char *argv[MAXARGS];
+		const char* argv[MAXARGS];
 		uint32_t argc = 0;
 
-		char *foo = line;
+		char* foo = line;
 
 		while (!EOS(*foo) && argc < MAXARGS)
 		{
@@ -161,7 +161,7 @@ namespace IN_PARSER
 						}
 						else if (IsHard(*foo)) // if we hit a hard separator, stomp a zero byte and store the hard separator argument
 						{
-							const char *hard = &mHardString[*foo * 2];
+							const char* hard = &mHardString[*foo * 2];
 							*foo = 0;
 							if (argc < MAXARGS)
 							{
@@ -184,7 +184,7 @@ namespace IN_PARSER
 		return ret;
 	}
 
-	uint32_t  InPlaceParser::Parse(InPlaceParserInterface *callback) // returns true if entire file was parsed, false if it aborted for some reason
+	uint32_t  InPlaceParser::Parse(InPlaceParserInterface* callback) // returns true if entire file was parsed, false if it aborted for some reason
 	{
 		if (!mData) return 0;
 
@@ -192,8 +192,8 @@ namespace IN_PARSER
 
 		uint32_t lineno = 0;
 
-		char *foo = mData;
-		char *begin = foo;
+		char* foo = mData;
+		char* begin = foo;
 
 
 		while (*foo)
@@ -241,14 +241,14 @@ namespace IN_PARSER
 	}
 
 
-	const char ** InPlaceParser::GetArglist(char *line, uint32_t &count) // convert source string into an arg list, this is a destructive parse.
+	const char** InPlaceParser::GetArglist(char* line, uint32_t& count) // convert source string into an arg list, this is a destructive parse.
 	{
-		const char **ret = 0;
+		const char** ret = 0;
 
-		static const char *argv[MAXARGS];
+		static const char* argv[MAXARGS];
 		uint32_t argc = 0;
 
-		char *foo = line;
+		char* foo = line;
 
 		while (!EOS(*foo) && argc < MAXARGS)
 		{
@@ -307,7 +307,7 @@ namespace IN_PARSER
 						}
 						else if (IsHard(*foo)) // if we hit a hard separator, stomp a zero byte and store the hard separator argument
 						{
-							const char *hard = &mHardString[*foo * 2];
+							const char* hard = &mHardString[*foo * 2];
 							*foo = 0;
 							if (argc < MAXARGS)
 							{
