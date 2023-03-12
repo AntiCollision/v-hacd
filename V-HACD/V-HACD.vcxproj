@@ -128,9 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BoundsAABB.h" />
+    <ClInclude Include="ConvexHullFace.h" />
     <ClInclude Include="FillMode.h" />
     <ClInclude Include="FloatMath.h" />
     <ClInclude Include="Googol.h" />
+    <ClInclude Include="HullPlane.h" />
     <ClInclude Include="InParser.h" />
     <ClInclude Include="IVHACD.h" />
     <ClInclude Include="NodeBundle.h" />
