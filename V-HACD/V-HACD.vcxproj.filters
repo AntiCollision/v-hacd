@@ -31,6 +31,12 @@
     <Filter Include="헤더 파일\VHACD\Impl">
       <UniqueIdentifier>{7d57e71f-31b4-4808-8862-6080aca55314}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\VHACD\under">
+      <UniqueIdentifier>{cd9d5ec9-dbb4-4441-a022-9a5c857a5e5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\VHACD\enum">
+      <UniqueIdentifier>{6bf2410b-1044-4345-ab70-92225dca0afb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="wavefront.h">
@@ -52,9 +58,6 @@
       <Filter>헤더 파일\VHACD</Filter>
     </ClInclude>
     <ClInclude Include="BoundsAABB.h">
-      <Filter>헤더 파일\VHACD</Filter>
-    </ClInclude>
-    <ClInclude Include="FillMode.h">
       <Filter>헤더 파일\VHACD</Filter>
     </ClInclude>
     <ClInclude Include="IVHACD.h">
@@ -82,7 +85,34 @@
       <Filter>헤더 파일\VHACD</Filter>
     </ClInclude>
     <ClInclude Include="ConvexHullFace.h">
+      <Filter>헤더 파일\VHACD\under</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvexHullVertex.h">
+      <Filter>헤더 파일\VHACD\under</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvexHullAABBTreeNode.h">
+      <Filter>헤더 파일\VHACD\under</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvexHull.h">
+      <Filter>헤더 파일\VHACD\under</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvexHull_nbNormalMap.h">
+      <Filter>헤더 파일\VHACD\under</Filter>
+    </ClInclude>
+    <ClInclude Include="FillMode.h">
+      <Filter>헤더 파일\VHACD\enum</Filter>
+    </ClInclude>
+    <ClInclude Include="KdTreeNode.h">
       <Filter>헤더 파일\VHACD</Filter>
+    </ClInclude>
+    <ClInclude Include="KdTreeFindNode.h">
+      <Filter>헤더 파일\VHACD</Filter>
+    </ClInclude>
+    <ClInclude Include="KdTree.h">
+      <Filter>헤더 파일\VHACD</Filter>
+    </ClInclude>
+    <ClInclude Include="Axes.h">
+      <Filter>헤더 파일\VHACD\enum</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -110,6 +140,15 @@
       <Filter>헤더 파일\VHACD\Impl</Filter>
     </None>
     <None Include="NodeBundle.inl">
+      <Filter>헤더 파일\VHACD\Impl</Filter>
+    </None>
+    <None Include="ConvexHull.inl">
+      <Filter>헤더 파일\VHACD\Impl</Filter>
+    </None>
+    <None Include="kdTree.inl">
+      <Filter>헤더 파일\VHACD\Impl</Filter>
+    </None>
+    <None Include="KdTreeNode.inl">
       <Filter>헤더 파일\VHACD\Impl</Filter>
     </None>
   </ItemGroup>

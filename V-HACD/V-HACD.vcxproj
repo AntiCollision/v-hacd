@@ -127,14 +127,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Axes.h" />
     <ClInclude Include="BoundsAABB.h" />
+    <ClInclude Include="ConvexHull.h" />
+    <ClInclude Include="ConvexHullAABBTreeNode.h" />
     <ClInclude Include="ConvexHullFace.h" />
+    <ClInclude Include="ConvexHullVertex.h" />
+    <ClInclude Include="ConvexHull_nbNormalMap.h" />
     <ClInclude Include="FillMode.h" />
     <ClInclude Include="FloatMath.h" />
     <ClInclude Include="Googol.h" />
     <ClInclude Include="HullPlane.h" />
     <ClInclude Include="InParser.h" />
     <ClInclude Include="IVHACD.h" />
+    <ClInclude Include="KdTree.h" />
+    <ClInclude Include="KdTreeFindNode.h" />
+    <ClInclude Include="KdTreeNode.h" />
     <ClInclude Include="NodeBundle.h" />
     <ClInclude Include="ScopedTime.h" />
     <ClInclude Include="Timer.h" />
@@ -153,7 +161,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="BoundsAABB.inl" />
+    <None Include="ConvexHull.inl" />
     <None Include="FloatMath.inl" />
+    <None Include="kdTree.inl" />
+    <None Include="KdTreeNode.inl" />
     <None Include="NodeBundle.inl" />
     <None Include="Vector3.inl" />
   </ItemGroup>
