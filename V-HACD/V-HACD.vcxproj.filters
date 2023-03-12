@@ -19,9 +19,6 @@
     <Filter Include="헤더 파일\Reader/Writer">
       <UniqueIdentifier>{bc1a4f29-e873-4965-a747-ac1749bb3561}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일\Physics">
-      <UniqueIdentifier>{0bc17bc1-bcec-4e76-bf5f-e598cc646870}</UniqueIdentifier>
-    </Filter>
     <Filter Include="헤더 파일\Timer">
       <UniqueIdentifier>{a899918d-da49-4bad-a5c9-c5944fb30919}</UniqueIdentifier>
     </Filter>
@@ -39,14 +36,14 @@
     <ClInclude Include="InParser.h">
       <Filter>헤더 파일\Reader/Writer</Filter>
     </ClInclude>
-    <ClInclude Include="FloatMath.h">
-      <Filter>헤더 파일\Physics</Filter>
-    </ClInclude>
     <ClInclude Include="ScopedTime.h">
       <Filter>헤더 파일\Timer</Filter>
     </ClInclude>
     <ClInclude Include="VHACD.h">
       <Filter>헤더 파일\VHACD</Filter>
+    </ClInclude>
+    <ClInclude Include="FloatMath.h">
+      <Filter>헤더 파일\Reader/Writer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -59,5 +56,13 @@
     <ClCompile Include="InParser.cpp">
       <Filter>소스 파일\Reader/Writer</Filter>
     </ClCompile>
+    <ClCompile Include="FloatMath.cpp">
+      <Filter>소스 파일\Reader/Writer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FloatMath.inl">
+      <Filter>소스 파일\Reader/Writer</Filter>
+    </None>
   </ItemGroup>
 </Project>

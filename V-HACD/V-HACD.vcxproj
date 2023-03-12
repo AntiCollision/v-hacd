@@ -134,9 +134,13 @@
     <ClInclude Include="wavefront.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FloatMath.cpp" />
     <ClCompile Include="InParser.cpp" />
     <ClCompile Include="TestVHACD.cpp" />
     <ClCompile Include="wavefront.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FloatMath.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
