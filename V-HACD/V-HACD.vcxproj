@@ -127,10 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BoundsAABB.h" />
+    <ClInclude Include="FillMode.h" />
     <ClInclude Include="FloatMath.h" />
     <ClInclude Include="InParser.h" />
+    <ClInclude Include="IVHACD.h" />
+    <ClInclude Include="NodeBundle.h" />
     <ClInclude Include="ScopedTime.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vertex.h" />
     <ClInclude Include="VHACD.h" />
+    <ClInclude Include="VScopedTime.h" />
     <ClInclude Include="wavefront.h" />
   </ItemGroup>
   <ItemGroup>
@@ -140,7 +149,10 @@
     <ClCompile Include="wavefront.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="BoundsAABB.inl" />
     <None Include="FloatMath.inl" />
+    <None Include="NodeBundle.inl" />
+    <None Include="Vector3.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -28,6 +28,9 @@
     <Filter Include="소스 파일\VHACD">
       <UniqueIdentifier>{dac0d2ee-d735-43e2-9dc6-4a8fc2ae83c3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\VHACD\Impl">
+      <UniqueIdentifier>{7d57e71f-31b4-4808-8862-6080aca55314}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="wavefront.h">
@@ -44,6 +47,33 @@
     </ClInclude>
     <ClInclude Include="FloatMath.h">
       <Filter>헤더 파일\Reader/Writer</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>헤더 파일\VHACD</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundsAABB.h">
+      <Filter>헤더 파일\VHACD</Filter>
+    </ClInclude>
+    <ClInclude Include="FillMode.h">
+      <Filter>헤더 파일\VHACD</Filter>
+    </ClInclude>
+    <ClInclude Include="IVHACD.h">
+      <Filter>헤더 파일\VHACD</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>헤더 파일\VHACD</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>헤더 파일\VHACD</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>헤더 파일\VHACD</Filter>
+    </ClInclude>
+    <ClInclude Include="VScopedTime.h">
+      <Filter>헤더 파일\VHACD</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeBundle.h">
+      <Filter>헤더 파일\VHACD</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +93,15 @@
   <ItemGroup>
     <None Include="FloatMath.inl">
       <Filter>소스 파일\Reader/Writer</Filter>
+    </None>
+    <None Include="Vector3.inl">
+      <Filter>헤더 파일\VHACD\Impl</Filter>
+    </None>
+    <None Include="BoundsAABB.inl">
+      <Filter>헤더 파일\VHACD\Impl</Filter>
+    </None>
+    <None Include="NodeBundle.inl">
+      <Filter>헤더 파일\VHACD\Impl</Filter>
     </None>
   </ItemGroup>
 </Project>
