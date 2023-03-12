@@ -1,0 +1,10 @@
+#pragma once
+
+enum class VoxelValue : uint8_t
+{
+    PRIMITIVE_UNDEFINED = 0,
+    PRIMITIVE_OUTSIDE_SURFACE_TOWALK = 1,
+    PRIMITIVE_OUTSIDE_SURFACE = 2,
+    PRIMITIVE_INSIDE_SURFACE = 3,
+    PRIMITIVE_ON_SURFACE = 4
+};

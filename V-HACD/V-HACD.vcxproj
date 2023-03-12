@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AABBTree.h" />
     <ClInclude Include="Axes.h" />
     <ClInclude Include="BoundsAABB.h" />
     <ClInclude Include="ConvexHull.h" />
@@ -144,12 +145,18 @@
     <ClInclude Include="KdTreeFindNode.h" />
     <ClInclude Include="KdTreeNode.h" />
     <ClInclude Include="NodeBundle.h" />
+    <ClInclude Include="QuickHull.h" />
     <ClInclude Include="ScopedTime.h" />
+    <ClInclude Include="SimpleMesh.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Triangle.h" />
     <ClInclude Include="Vector3.h" />
     <ClInclude Include="Vertex.h" />
+    <ClInclude Include="VertexIndex.h" />
     <ClInclude Include="VHACD.h" />
+    <ClInclude Include="Volume.h" />
+    <ClInclude Include="Voxel.h" />
+    <ClInclude Include="VoxelValue.h" />
     <ClInclude Include="VScopedTime.h" />
     <ClInclude Include="wavefront.h" />
   </ItemGroup>
@@ -160,6 +167,7 @@
     <ClCompile Include="wavefront.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AABBTree.inl" />
     <None Include="BoundsAABB.inl" />
     <None Include="ConvexHull.inl" />
     <None Include="FloatMath.inl" />
@@ -167,6 +175,9 @@
     <None Include="KdTreeNode.inl" />
     <None Include="NodeBundle.inl" />
     <None Include="Vector3.inl" />
+    <None Include="VertexIndex.inl" />
+    <None Include="Volume.inl" />
+    <None Include="Voxel.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

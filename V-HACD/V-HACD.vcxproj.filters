@@ -37,6 +37,12 @@
     <Filter Include="헤더 파일\VHACD\enum">
       <UniqueIdentifier>{6bf2410b-1044-4345-ab70-92225dca0afb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\VHACD\under\AABB">
+      <UniqueIdentifier>{51047cdb-20aa-4d93-8446-ad7d951c189e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\VHACD\under\Voxel">
+      <UniqueIdentifier>{cb11a9e6-c72f-4aa6-b83a-4673ab2dd760}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="wavefront.h">
@@ -114,6 +120,27 @@
     <ClInclude Include="Axes.h">
       <Filter>헤더 파일\VHACD\enum</Filter>
     </ClInclude>
+    <ClInclude Include="VertexIndex.h">
+      <Filter>헤더 파일\VHACD\under</Filter>
+    </ClInclude>
+    <ClInclude Include="Voxel.h">
+      <Filter>헤더 파일\VHACD\under</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleMesh.h">
+      <Filter>헤더 파일\VHACD</Filter>
+    </ClInclude>
+    <ClInclude Include="AABBTree.h">
+      <Filter>헤더 파일\VHACD\under\AABB</Filter>
+    </ClInclude>
+    <ClInclude Include="VoxelValue.h">
+      <Filter>헤더 파일\VHACD\enum</Filter>
+    </ClInclude>
+    <ClInclude Include="Volume.h">
+      <Filter>헤더 파일\VHACD\under\Voxel</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickHull.h">
+      <Filter>헤더 파일\VHACD\under</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TestVHACD.cpp">
@@ -149,6 +176,18 @@
       <Filter>헤더 파일\VHACD\Impl</Filter>
     </None>
     <None Include="KdTreeNode.inl">
+      <Filter>헤더 파일\VHACD\Impl</Filter>
+    </None>
+    <None Include="VertexIndex.inl">
+      <Filter>헤더 파일\VHACD\Impl</Filter>
+    </None>
+    <None Include="Voxel.inl">
+      <Filter>헤더 파일\VHACD\Impl</Filter>
+    </None>
+    <None Include="AABBTree.inl">
+      <Filter>헤더 파일\VHACD\Impl</Filter>
+    </None>
+    <None Include="Volume.inl">
       <Filter>헤더 파일\VHACD\Impl</Filter>
     </None>
   </ItemGroup>
